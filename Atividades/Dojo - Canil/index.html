@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="br-BR">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dojo - Canil</title>
+    </head>
+    <body>
+        <script>
+            cachorro={
+                "nome":"Max",
+                "peso":35.2,
+                "raca":"Labrador",
+
+                "latir":function(){
+                    /*return console.log(`${cachorro.nome} :auau`);*/
+                    return document.body.innerHTML="<h1>" + cachorro.nome + ": auau </h1> <br>"
+
+                },
+
+                "rosnar":function(){
+                    /*return console.log(`${cachorro.nome} :grrr`);*/
+                    return document.body.innerHTML="<h1>" + cachorro.nome + ": Grrr </h1> <br>"
+                },
+            }
+            
+            cachorro.latir(),
+            cachorro.rosnar()
+        </script>
+    </body>
+    
+</html>

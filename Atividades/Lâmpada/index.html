@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="br-BR">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>POO - Acesso interno</title>
+    </head>
+    <body>
+        <script>
+            lampada={
+                "cor":"Amarela",
+                "acesa":false,
+                "getCor":function(){
+                    return this.cor;
+                },
+                "acender":function(){
+                    if (!this.acesa){
+                        this.acesa=true;
+                    }
+                },
+                "apagar":function(){
+                    if (this.acesa){
+                        this.acesa=false;
+                    }
+                },
+            }
+            document.body.innerHTML="<h1>A lâmpada é " + lampada.cor + "</h1><br> <h1>A lâmpada está acesa: " + lampada.acesa + "</h1>";
+
+        </script>
+    </body>
+    
+</html>

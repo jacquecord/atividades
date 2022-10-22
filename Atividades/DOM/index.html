@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Atividade: Tá aberto</title>
+        <script src="letreiro.js"></script>
+    </head>
+    <body>
+        <h1>testando...</h1>
+        
+        <button id="hello" onclick="alert('Olá mundo!')">Diga Olá</button>
+        
+        <nav>1</nav>
+        
+        <nav>2</nav>
+        <script>
+            var helloBtn=document.getElementById('hello');
+            helloBtn.onclick();
+                
+            var divDesc=document.createElement('div');
+            var paragrafoDesc=document.createElement('p');
+            divDesc.append(paragrafoDesc);
+        
+
+            var cabeçalho=document.querySelector('h1');
+            cabeçalho.innerText="Manipulando a página com DOM!"
+            cabeçalho.style.color='red';
+
+            var navHeader=document.querySelector("nav");
+            navHeader.innerHTML=`
+                <h1>Webdev</h1>
+                <div>
+                    <p>Home</p>
+                    <p>Quem Somos</p>
+                    <p>Contatos</p>
+                </div>
+            `
+
+
+            
+        </script>       
+    </body>
+</html>

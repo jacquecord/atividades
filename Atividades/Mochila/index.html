@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="br-BR">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mochila</title>
+    </head>
+    <body>
+        <script>
+            mochila={
+                "materiais":"estojo",
+                "guardar":function(materiais){
+                    return console.log(`guardando ${materiais} na mochila.`);
+                },
+            }
+            
+            try {
+                mochila.guardar("estojo");
+            } catch (erro) {
+                console.log("Não foi possível guardar na mochila");
+                console.log(erro)
+            }
+            
+            console.log("Esse código é executado mesmo quando erros ocorrem");
+        </script>
+    </body>
+    
+</html>
