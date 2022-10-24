@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>jQuery + AJAX</title>
+        <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
         <form>
@@ -13,10 +14,19 @@
         </form>
         <div class="poke-info">
         </div>
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous">
+        
+        <script> 
+            $.ajax({url:"https://pokeapi.co/api/v2/",
+                success: function(result){
+                    renderUser(result);
+                }
+            })
+            document.write(result);
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" 
+                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+                crossorigin="anonymous">
         </script>
     </body>
 </html>
