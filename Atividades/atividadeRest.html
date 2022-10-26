@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="br-BR">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript - rest </title>
+    </head>
+    <body>
+        <h2>Utilize inspecionar/console para ver o resultado</h2> 
+        <script>
+            console.log("Olá"," turma"," do"," Senac!");
+            
+            function acumula(texto, ...numeros){
+                let accum = 0;
+                for (let i =0; i<numeros.length; i++){
+                    accum += numeros[i];
+                } 
+                console.log(`${texto}:${accum}`);
+            }
+            acumula("resultado", 10,11,12);
+        </script>
+    </body>
+    
+</html>
