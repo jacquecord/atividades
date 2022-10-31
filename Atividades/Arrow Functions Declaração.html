@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="br-BR">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arrow Functions : declaração</title>
+    </head>
+    <body>
+        <script>
+            let nome='Ana';
+            const saudacao = nome =>`Olá ${nome}`;
+            
+            const olaMundo = () => "Olá Mundo!";
+            
+            const soma = (num1, num2) => num1 + num2;
+            
+            const somaDebugg = (num1, num2) => {
+                console.log("Somando Números!");
+                return num1 + num2;
+            }
+
+            console.log(saudacao());
+            console.log(olaMundo());
+            console.log(soma());
+            console.log(somaDebugg());
+        </script>
+    </body>
+</html>
