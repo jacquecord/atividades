@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="br-BR">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Array map - exemplo sem map</title>
+    </head>
+    <body>
+        <script>
+            const saldos = [120.54, 0, 5.29, -72, 13, -25.3];
+            const saldosDecrementados = [];
+            for (let i=0; i<saldos.length; i++){
+                if (saldos[i] < 0){
+                    saldosDecrementados.push(saldos[i]-10);
+                }else{
+                    saldosDecrementados.push(saldos[i]);
+                }
+            }
+            console.log(saldos);
+            console.log(saldosDecrementados);
+        </script>
+    </body>
+</html>

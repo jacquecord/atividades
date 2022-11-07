@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Atividade: mapeamento</title>
+  </head>
+  <body>
+    <script>
+      const users = [
+      {
+        nome: "Abraão Farias",
+        idade: 22,
+        animal: "Gato"
+      },
+      {
+        nome: "Michelina Souza",
+        idade: 12,
+        animal: "Hamster"
+      },
+      {
+        nome: "Venâncio Almeida",
+        idade: 45,
+        animal: ""
+      },
+      {
+        nome: "Maria Silva",
+        idade: 15,
+        animal: "Coelho"
+      },
+      {
+        nome: "José Eustáquio",
+        idade: 32,
+        animal: "Gato"
+      },
+      ]
+      //Insira aqui seu código!
+
+      /*Nomes de todos os usuários*/
+      const nomes=users.map(user=>{
+        return user.nome;
+      })
+  
+      /*Nomes e sobrenomes abreviados */
+      const nomesAbrev=users.map(userAbrv);
+      function userAbrv(item) {
+        let nom="";
+        let sobN="";
+        
+        for (i=0; i<4; i++){
+          nom += item.nome[i];
+        }
+
+        for (i=0; i<item.nome.length; i++){
+          if (item.nome[i]==" "){
+            for (j=i+1; j<(i+5); j++){
+              sobN += item.nome[j];
+            }
+            break;
+          }
+        }
+        return [nom,sobN].join(".");
+      }
+
+      /*Usuários amantes de gatos*/
+      //const amantesGatos=users.map(userAGato => userAGato.animal=="Gato" ? nomesAbrev[nom,sobN].join(".") : "");
+      const amantesGatos=users.map(userAGato => userAGato.animal=="Gato" ? userAGato.nome : "");
+      
+      console.log(nomes)
+      console.log(nomesAbrev)
+      console.log(amantesGatos)
+    </script>
+  </body>
+</html>
